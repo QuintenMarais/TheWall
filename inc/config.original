@@ -1,0 +1,15 @@
+<?php
+// Configuration values
+$appid              = "";
+$tennantid          = "";
+$secret             = ""; //Secret
+$login_url          = "https://login.microsoftonline.com/".$tennantid."/oauth2/v2.0/authorize";
+$redirect_uri       = "https://127.0.0.1/thewall/www/";
+$Logout_uri         = "https://127.0.0.1/thewall/www/";
+$SuccessRedirect    = "https://127.0.0.1/thewall/www/dashboard.php";
+$sqlitedbname       = "changedb.db";
+
+$theBlackfilePath   = 'thefile/blacklist.txt';
+$logFilePath        = 'logs/user_actions_log.log';
+
+?>

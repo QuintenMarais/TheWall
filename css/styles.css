@@ -1,0 +1,40 @@
+body {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #dddddd; /* Set a fallback background color */
+    }
+
+.custom-navbar {
+        background-color: white;
+    }
+
+.custom-container {
+        border: 0px solid #000; /* 1px solid black border */
+        padding: 10px; /* Add padding for spacing */
+    }
+
+.custom-indent {
+        margin-left: 30px;
+      }
+
+.custom-small-table {
+        width: 50%; /* Adjust the width as needed */
+        max-width: 500px; /* Set a maximum width if desired */
+        margin: auto; /* Center the table within its container */
+      }
+      .custom-large-table {
+        min-width: 250px;
+    }
+      
+.custom-Log-table {
+        max-width: 80%;
+    }
+
+    .custom-Settings-table {
+        max-width: 80%;
+    }
+      
+
+
+    
