@@ -1,5 +1,6 @@
 <?php
 // Configuration values
+// All details with a //Secret in the line will be hidden on the settings page
 $appid              = "";
 $tennantid          = "";
 $secret             = ""; //Secret
