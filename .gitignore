@@ -1,11 +1,6 @@
-# Ignore the contents of the "Logs" Folder 
-/logs/*
-# But do not ignore the "logs" itself
-!logs/
-# Ignore the contents of the "thefile" Folder 
-/thefile/*
-# But do not ignore the "thefile" itself
-!thefile/
+/logs/*.log
+/thefile/blacklist.txt
 /db/*
 /old/*
+
 /inc/*.conf
