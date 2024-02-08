@@ -2,8 +2,4 @@
 /thefile/blacklist.txt
 /db/*
 /old/*
-<<<<<<< HEAD
 /inc/*.conf
-=======
-/inc/*.conf
->>>>>>> 8f1310de3db35197e829446d4aefe7e548da8f39
