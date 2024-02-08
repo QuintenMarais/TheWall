@@ -4,3 +4,4 @@
 /old/*
 /inc/config.conf
 !TheWall.code-workspace
+!README.md
