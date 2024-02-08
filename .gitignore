@@ -2,4 +2,4 @@
 /thefile/blacklist.txt
 /db/*
 /old/*
-/inc/*.conf
+/inc/config.conf
