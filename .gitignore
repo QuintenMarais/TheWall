@@ -3,3 +3,4 @@
 /db/*
 /old/*
 /inc/config.conf
+!TheWall.code-workspace
