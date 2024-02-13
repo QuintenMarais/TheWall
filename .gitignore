@@ -1,5 +1,6 @@
 /logs/*.log
-/thefile/blacklist.txt
+/thefile/fqdnblacklist.txt
+/thefile/ipblacklist.txt
 /db/*
 /old/*
 /inc/config.conf
