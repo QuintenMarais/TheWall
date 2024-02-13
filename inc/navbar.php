@@ -39,6 +39,9 @@
                     <li class="nav-item">
                     <a class="nav-link " href="settings.php">Settings</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="HowTo.php">How To</a>
+                    </li>
                 <!--         <li class="nav-item">
                     <a class="nav-link disabled" href="#">Logs</a>
                     </li>

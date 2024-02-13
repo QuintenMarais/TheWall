@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Check if the entry is not empty
                 if (!empty($newEntry)) {
                     // Append the new entry to the file with a newline character
-                    file_put_contents($theBlackfilePath, PHP_EOL . $newEntry, FILE_APPEND | LOCK_EX);
+                    file_put_contents($theipBlackfilePath, PHP_EOL . $newEntry, FILE_APPEND | LOCK_EX);
                 }
                 logUserAction($logFilePath, $_SESSION['userPrincipalName'], "Added record : $newEntry");
             }
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $ipToDelete = urldecode($_POST['ip']);
         
                 // Read the file and store each line in an array
-                $blacklistData = file($theBlackfilePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                $blacklistData = file($theipBlackfilePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         
                 // Find the index of the IP address in the array
                 $indexToDelete = array_search($ipToDelete, $blacklistData);
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     unset($blacklistData[$indexToDelete]);
         
                     // Save the modified array back to the file
-                    file_put_contents($theBlackfilePath, implode("\n", $blacklistData));
+                    file_put_contents($theipBlackfilePath, implode("\n", $blacklistData));
                 }
             }
         }

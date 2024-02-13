@@ -37,12 +37,12 @@ include('inc/navbar.php');
 
       // Check if the setting entry has the expected number of fields
       if (count($settingFields) === 2) {
-          $settingName = trim($settingFields[0]);
+          $settingName = trim(str_replace(['$', ';'], '', $settingFields[0]));
           $settingValue = trim(str_replace(['"', ';'], '', $settingFields[1]));
 
           echo '<tr>';
           echo '<td>' . htmlspecialchars($settingName) . '</td>';
-          echo '<td>' . (strpos($settingName, 'secret') !== false ? '********' : htmlspecialchars($settingValue)) . '</td>';
+          echo '<td>' . (strpos($settingValue, 'Secret') !== false ? '********' : htmlspecialchars($settingValue)) . '</td>';
           echo '</tr>';
       }
   }
